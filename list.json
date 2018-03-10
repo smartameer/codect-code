@@ -1,3 +1,4 @@
 [
-    { "id": 1,  "title": "Sum of Array", "author": "Pradeep Patro", "tags": [ "Array"], "languages": [ "Javascript", "PHP" ], "content": "content/sum_of_array.yml" }
+    { "id": 1,  "title": "Sum of Array", "author": "Pradeep Patro", "tags": [ "Array"], "languages": [ "Javascript", "PHP" ], "content": "content/sum_of_array.yml" },
+    { "id": 2,  "title": "Unique values of Array", "author": "Pradeep Patro", "tags": [ "Array"], "languages": [ "Javascript", "Python" ], "content": "content/sum_of_array.yml" }
 ]
