@@ -1,3 +1,12 @@
 [
-    { "id": 1,  "title": "Sum of Array", "author": "Pradeep Patro", "tags": [ "Array"], "languages": [ "Javascript", "PHP" ], "content": "content/sum_of_array.yml" }
+    { "id": 1,  "title": "Sum of Array", "author": "Pradeep Patro", "tags": [ "Array"], "languages": [ "Javascript", "PHP" ], "content": "content/sum_of_array.yml" },
+    { "id": 2,  "title": "Sum of ArrayList", "author": "Pradeep Patro", "tags": [ "ArrayList"], "languages": [ "Ruby" ], "content": "content/sum_of_array.yml" },
+    { "id": 3,  "title": "Sum of Map", "author": "Pradeep Patro", "tags": [ "Map"], "languages": [ "Python", "PHP" ], "content": "content/sum_of_array.yml" },
+    { "id": 4,  "title": "Sum of Hash", "author": "Pradeep Patro", "tags": [ "Hash"], "languages": [ "Java", "PHP" ], "content": "content/sum_of_array.yml" },
+    { "id": 5,  "title": "Sum of LinkedList", "author": "Pradeep Patro", "tags": [ "LinkedList"], "languages": [ "Javascript", "C" ], "content": "content/sum_of_array.yml" },
+    { "id": 6,  "title": "Sum of Stack", "author": "Pradeep Patro", "tags": [ "Stack"], "languages": [ "C++", "Python" ], "content": "content/sum_of_array.yml" },
+    { "id": 7,  "title": "Sum of Queue", "author": "Pradeep Patro", "tags": [ "Queue"], "languages": [ "Python", "Java" ], "content": "content/sum_of_array.yml" },
+    { "id": 8,  "title": "Sum of Heap", "author": "Pradeep Patro", "tags": [ "Garbage Collection"], "languages": [ "Javascript", "PHP" ], "content": "content/sum_of_array.yml" },
+    { "id": 9,  "title": "Sum of Collection", "author": "Pradeep Patro", "tags": [ "Collection"], "languages": [ "Javascript", "PHP" ], "content": "content/sum_of_array.yml" },
+    { "id": 10,  "title": "Sum of HashMap", "author": "Pradeep Patro", "tags": [ "HashMap", "Map"], "languages": [ "Javascript", "PHP" ], "content": "content/sum_of_array.yml" }
 ]
