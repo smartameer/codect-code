@@ -7,7 +7,6 @@ tags:
     - Sequence
 languages:
     - Javascript
-    - PHP
 description: |
     Program is to return Nth number of fibonacci's sequence
     Fibonacci sequence is characterized by the fact, every number after the first two is the sum of the two preceding ones
