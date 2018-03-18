@@ -1,0 +1,44 @@
+---
+title: Tower of Hanoi/Bramha/Lucas' Problem
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+    - name: Tower of Hanoi
+      url : https://wikipedia.org/wiki/Tower_of_Hanoi
+tags:
+    - Number
+    - Sequence
+languages:
+    - Javascript
+description: |
+    Returns all movements needed to solve Hanoi Tower problem.
+    The problem is based on number of plates or stones can moved to pegs only once per move.
+code:
+    Javascript: |
+        function hanoi(count, source, intermediate, goal, result) {
+            result = result || [];
+            if (count === 1) {
+                result.push([source, goal]);
+            } else {
+                hanoi(count - 1, source, goal, intermediate, result);
+                result.push([source, goal]);
+                hanoi(count - 1, intermediate, source, goal, result);
+            }
+            return result;
+        }
+
+        var movements = hanoi(3, 'a', 'b', 'c');
+        movements.forEach(function (move) {
+            console.log('Move', move[0], 'to', move[1]);
+        });
+        // Move a to c
+        // Move a to b
+        // Move c to b
+        // Move a to c
+        // Move b to a
+        // Move b to c
+        // Move a to c
+

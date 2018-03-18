@@ -1,7 +1,11 @@
 ---
-title: Sum of Array
-author: Pradeep Patro
-ref: https://github.com/mgechev/javascript-algorithms
+title: Nth number of Fibonacci's sequence
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
 tags:
     - Number
     - Sequence
@@ -14,22 +18,22 @@ description: |
 code:
     Javascript: |
         function fibonacci (n) {
-			if (n > 97) {
-				throw 'Input too large, results in inaccurate fibonacci value.';
-			}
-			var n1 = 0;
-			var n2 = 1;
-			var aux;
+            if (n > 97) {
+                throw 'Input too large, results in inaccurate fibonacci value.';
+            }
+            var n1 = 0,
+                n2 = 1,
+                aux;
 
-			while (n > 0) {
-				aux = n1;
-				n1 = n2;
-				n2 += aux;
-				n = n - 1;
-			}
+            while (n > 0) {
+                aux = n1;
+                n1 = n2;
+                n2 += aux;
+                n = n - 1;
+            }
 
-			return n1;
-		}
-        
+            return n1;
+        }
+
         var nth = fibonacci(20);
         console.log(nth); // 6765
