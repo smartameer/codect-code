@@ -17,6 +17,11 @@ description: |
     e.g. 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 code:
     Javascript: |
+        /**
+         *
+         * @param {Number} n The nth position in fibonacci's sequence
+         *
+         */
         function fibonacci (n) {
             if (n > 97) {
                 throw 'Input too large, results in inaccurate fibonacci value.';

@@ -15,18 +15,32 @@ languages:
     - Javascript
 description: |
     Returns all movements needed to solve Hanoi Tower problem.
-    The problem is based on number of plates or stones can moved to pegs only once per move.
+    This problem is based on number of plates or stones can moved to pegs only once per move.
 code:
     Javascript: |
+        /**
+         *
+         * @param {Number} count Count of the plates/stones.
+         * @param {String|Number} source Identifier of the 1st peg.
+         * @param {String|Number} intermediate Identifier of the 2nd peg.
+         * @param {String|Number} goal Identifier of the 3rd peg.
+         * @return Array which contains all the moves required
+         * in order to place all the plates onto the last peg.
+         *
+         */
+
         function hanoi(count, source, intermediate, goal, result) {
             result = result || [];
+
             if (count === 1) {
                 result.push([source, goal]);
+
             } else {
                 hanoi(count - 1, source, goal, intermediate, result);
                 result.push([source, goal]);
                 hanoi(count - 1, intermediate, source, goal, result);
             }
+
             return result;
         }
 
