@@ -1,0 +1,40 @@
+---
+title: The shuffling algorithm of Richard Durstenfeld.
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+tags:
+    - Array
+    - Shuffle
+languages:
+    - Javascript
+description: |
+    Program is to return shuffled array
+    This algorithm is modified version of Fisher-Yates shuffle algorithm and is introduced by Richard Durstenfeld.
+    Time Compexity - O(N)
+code:
+    Javascript: |
+        /**
+         *
+         * @param {Array} array Array which should be shuffled.
+         * @return {Array} Shuffled array.
+         *
+         */
+        function shuffle(array) {
+            var arraySize = array.length - 1;
+            var rand;
+            var temp;
+            for (var i = arraySize; i >= 0; i -= 1) {
+                rand = Math.round(Math.random() * arraySize);
+                temp = array[i];
+                array[i] = array[rand];
+                array[rand] = temp;
+            }
+            return array;
+        }
+
+        shuffledArray = shuffle([1, 2, 3, 4, 5, 6]);
+        console.log(shuffledArray);

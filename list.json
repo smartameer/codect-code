@@ -4,5 +4,6 @@
     { "id": 3,  "title": "Bubble Sort", "tags": ["Sort", "Array"], "languages": ["Javascript"], "content": "content/sort/bubblesort.yml" },
     { "id": 4,  "title": "Insertion Sort", "tags": ["Sort", "Array"], "languages": ["Javascript", "PHP", "Python"], "content": "content/sort/insertionsort.yml" },
     { "id": 5,  "title": "Selection Sort", "tags": ["Sort", "Array"], "languages": ["Javascript"], "content": "content/sort/selectionsort.yml" },
-    { "id": 6,  "title": "Fisher-Yates shuffling algorithm", "tags": ["Array", "Shuffle"], "languages": ["Javascript"], "content": "content/shuffle/fisheryates.yml" }
+    { "id": 6,  "title": "Fisher-Yates shuffling algorithm", "tags": ["Array", "Shuffle"], "languages": ["Javascript"], "content": "content/shuffle/fisheryates.yml" },
+    { "id": 7,  "title": "Richard Durstenfeld shuffling algorithm", "tags": ["Array", "Shuffle"], "languages": ["Javascript"], "content": "content/shuffle/richarddurstenfeld.yml" }
 ]
