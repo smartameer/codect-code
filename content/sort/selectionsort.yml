@@ -1,0 +1,52 @@
+---
+title: Selection sort algorithm
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+tags:
+    - Sort
+languages:
+    - Javascript
+description: |
+    Program is to sort an array of integers with selection sort algorithm
+    Time Complexity - O(N^2).
+    e.g. [2, 5, 1, 0, 7, 4] => [0, 1, 2, 4, 5, 7]
+code:
+    Javascript: |
+        /**
+         *
+         * @param {Array} array Input array.
+         * @param {Function} comparator Optional. A function that defines an
+         * alternative sort order. The function should return a negative,
+         * zero, or positive value, depending on the arguments.
+         * @return {Array} Sorted array.
+         *
+         */
+
+         function selectionSort(array, comparator) {
+            comparator = comparator || function (x, y) { return x - y; };
+            var min;
+            var idx;
+            var temp;
+            for (var i = 0; i < array.length; i += 1) {
+                idx = i;
+                min = array[i];
+                for (var j = i + 1; j < array.length; j += 1) {
+                    if (comparator(min, array[j]) > 0) {
+                        min = array[j];
+                        idx = j;
+                    }
+                }
+                // swaping values
+                temp = array[i];
+                array[i] = min;
+                array[idx] = temp;
+            }
+            return array;
+        }
+
+        var sortedArray = selectionSort([2, 5, 1, 0, 7, 4]);
+        console.log(sortedArray); // [0, 1, 2, 4, 5, 7]
