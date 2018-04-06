@@ -1,0 +1,57 @@
+---
+title: Check if a number is prime number.
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+tags:
+    - Number
+    - Prime
+languages:
+    - Javascript
+description: |
+    Advanced (optimised) method for checking if provided number is prime
+    e.g. 13 return true, 16 returns false
+code:
+    Javascript: |
+        /**
+         *
+         * @param {Number} number - Number that we check on prime.
+         * @return {Boolean} Will return true if provided number is prime.
+         *
+         */
+        function isPrime(number) {
+
+            if (number < 2) {
+                return false;
+            }
+
+            if (number % 2 === 0) {
+                return (number === 2);
+            }
+
+            if (number % 3 === 0) {
+                return (number === 3);
+            }
+
+            var horizon = Math.floor(Math.sqrt(number));
+            var factor = 5;
+
+            while (factor <= horizon) {
+
+                if (number % factor === 0) {
+                    return false;
+                }
+
+                if (number % (factor + 2) === 0) {
+                    return false;
+                }
+                factor += 6;
+            }
+            return true;
+        }
+
+        console.log(isPrime(7)); // true
+        console.log(isPrime(18)); // false
