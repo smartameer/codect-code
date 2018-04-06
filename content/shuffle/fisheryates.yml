@@ -1,0 +1,37 @@
+---
+title: The shuffling algorithm of Fisher-Yates.
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+tags:
+    - Array
+    - Shuffle
+languages:
+    - Javascript
+description: |
+    Program is to return shuffled array using Fisher-Yates algorithm Using ES6
+    Time Compexity - O(N)
+code:
+    Javascript: |
+        /**
+         *
+         * @param {Array} array Array which should be shuffled.
+         * @return {Array} Shuffled array.
+         *
+         */
+        function shuffle(array) {
+            var size = array.length;
+            var rand;
+            for (var i = 0; i < size; i += 1) {
+                rand = Math.floor(i + Math.random() * (size - i));
+                // Swap the two using es6 deconstruction
+                [array[rand], array[i]] = [array[i], array[rand]];
+            }
+            return array;
+        }
+
+        shuffledArray = shuffle([1, 2, 3, 4, 5, 6]);
+        console.log(shuffledArray);

@@ -8,6 +8,7 @@ ref:
       url : https://github.com/mgechev/javascript-algorithms
 tags:
     - Sort
+    - Array
 languages:
     - Javascript
     - PHP
