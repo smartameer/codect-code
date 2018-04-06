@@ -1,0 +1,47 @@
+---
+title: Bubble sort algorithm
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+tags:
+    - Sort
+    - Bubblesort
+languages:
+    - Javascript
+description: |
+    Program is to sort an array of integers with bubble sort algorithm
+    Time Complexity - O(N^2).
+    e.g. [2, 5, 1, 0, 7, 4] => [0, 1, 2, 4, 5, 7]
+code:
+    Javascript: |
+        /**
+         *
+         * @param {Array} array Input array.
+         * @param {Function} comparator Optional. A function that defines an
+         * alternative sort order. The function should return a negative,
+         * zero, or positive value, depending on the arguments.
+         * @return {Array} Sorted array.
+         *
+         */
+
+         function bubbleSort(array, comparator) {
+            comparator = comparator || function (x, y) { return x - y; };
+            var temp;
+            for (var i = 0; i < array.length; i += 1) {
+                for (var j = i; j > 0; j -= 1) {
+                    if (comparator(array[j], array[j - 1]) < 0) {
+                        // swapping values
+                        temp = array[j];
+                        array[j] = array[j - 1];
+                        array[j - 1] = temp;
+                    }
+                }
+            }
+            return array;
+        }
+
+        var sortedArray = sort([2, 5, 1, 0, 7, 4]);
+        console.log(sortedArray); // [0, 1, 2, 4, 5, 7]
