@@ -8,7 +8,6 @@ ref:
       url : https://github.com/mgechev/javascript-algorithms
 tags:
     - Sort
-    - Bubblesort
 languages:
     - Javascript
 description: |
@@ -43,5 +42,5 @@ code:
             return array;
         }
 
-        var sortedArray = sort([2, 5, 1, 0, 7, 4]);
+        var sortedArray = bubbleSort([2, 5, 1, 0, 7, 4]);
         console.log(sortedArray); // [0, 1, 2, 4, 5, 7]
