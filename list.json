@@ -3,5 +3,5 @@
     { "id": 2,  "title": "Tower of Hanoi/Bramha/Lucas' Problem", "tags": ["Number", "Sequence"], "languages": ["Javascript"], "content": "content/others/hanoi.yml" },
     { "id": 3,  "title": "Bubble Sort", "tags": ["Sort"], "languages": ["Javascript"], "content": "content/sort/bubblesort.yml" },
     { "id": 4,  "title": "Insertion Sort", "tags": ["Sort"], "languages": ["Javascript", "PHP", "Python"], "content": "content/sort/insertionsort.yml" },
-    { "id": 5,  "title": "Selection Sort", "tags": ["Sort"], "languages": ["Javascript"], "content": "content/sort/selection.yml" }
+    { "id": 5,  "title": "Selection Sort", "tags": ["Sort"], "languages": ["Javascript"], "content": "content/sort/selectionsort.yml" }
 ]
