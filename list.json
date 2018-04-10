@@ -7,5 +7,7 @@
     { "id": 6, "title": "Fisher-Yates shuffling algorithm", "tags": ["Array", "Shuffle"], "languages": ["Javascript"], "content": "content/shuffle/fisheryates.yml" },
     { "id": 7, "title": "Richard Durstenfeld shuffling algorithm", "tags": ["Array", "Shuffle"], "languages": ["Javascript"], "content": "content/shuffle/richarddurstenfeld.yml" },
     { "id": 8, "title": "If number is prime", "tags": ["Number", "Prime"], "languages": ["Javascript"], "content": "content/primes/isprime.yml" },
-    { "id": 9, "title": "Prime Factor Tree", "tags": ["Number", "Prime"], "languages": ["Javascript"], "content": "content/primes/primefactortree.yml" }
+    { "id": 9, "title": "Prime Factor Tree", "tags": ["Number", "Prime"], "languages": ["Javascript"], "content": "content/primes/primefactortree.yml" },
+    { "id": 10, "title": "Binary Search", "tags": ["Number", "Search", "Array"], "languages": ["Javascript"], "content": "content/searching/binarysearch.yml" },
+    { "id": 11, "title": "Recursive Binary Search", "tags": ["Number", "Search", "Array"], "languages": ["Javascript"], "content": "content/searching/recursivebinarysearch.yml" }
 ]

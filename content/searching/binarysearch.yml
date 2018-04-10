@@ -1,0 +1,51 @@
+---
+title: Binary Search
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+tags:
+    - Number
+    - Search
+    - Array
+languages:
+    - Javascript
+description: |
+    Searches for specific element in a given array using the binary search algorithm.
+    Time Complexity - O(log N)
+    e.g. Search 4 in [1, 2, 3, 4, 5] // position or index = 3
+code:
+    Javascript: |
+        function id (val) { return val; }
+        function get (key) { return function (val) { return val[key]; }; }
+
+        /**
+         *
+         * @param {Array} array Input array.
+         * @param {Number} value Value of the element which index should be found.
+         * @returns {Number} Index of the element or -1 if not found.
+         *
+         */
+        function binarySearch(array, value, key) {
+            key = !key ? id : typeof key === 'string' ? get(key) : key;
+            value = key(value);
+            var middle = Math.floor(array.length / 2);
+            var left = 0;
+            var right = array.length;
+            while (right >= left) {
+                var middleValue = key(array[middle]);
+                if (middleValue === value) {
+                    return middle;
+                } else if (middleValue > value) {
+                    right = middle - 1;
+                } else {
+                    left = middle + 1;
+                }
+                middle = Math.floor((left + right) / 2);
+            }
+            return -1;
+        }
+
+        console.log(binarySearch([1, 2, 3, 4, 5], 4)); // 3

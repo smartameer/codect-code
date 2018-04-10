@@ -1,0 +1,46 @@
+---
+title: Recursive Binary Search
+author:
+    - name: Pradeep Patro
+      url: https://github.com/smartameer
+ref:
+    - name: Javascript implementation of different computer science algorithms
+      url : https://github.com/mgechev/javascript-algorithms
+tags:
+    - Number
+    - Search
+    - Array
+languages:
+    - Javascript
+description: |
+    Recursive version of Binary Search
+    Searches for specific element in a given array using the recursive binary search algorithm.
+    Time Complexity - O(log N)
+    e.g. Search 4 in [1, 2, 3, 4, 5] // position or index = 3
+code:
+    Javascript: |
+        /**
+         *
+         * @param {Array} array Array where we should find the index of the element
+         * @param {Number} value Value of the element which index should be found
+         * @param {Number} left Left index
+         * @param {Number} right Right index
+         * @returns {Number} index The index of the element or -1 if not found
+         *
+         */
+        function recursiveBinarySearch(array, value, left, right) {
+            left = left || 0;
+            right = right || array.length;
+            if (left > right) {
+                return -1;
+            }
+            var middle = Math.floor((right + left) / 2);
+            if (array[middle] === value) {
+                return middle;
+            } else if (array[middle] > value) {
+                return recursiveBinarySearch(array, value, left, middle - 1);
+            }
+            return recursiveBinarySearch(array, value, middle + 1, right);
+        }
+
+        console.log(recursiveBinarySearch([1, 2, 3, 4, 5], 4)); // 3
